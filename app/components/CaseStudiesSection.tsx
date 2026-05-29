@@ -39,19 +39,35 @@ function ChevronIcon({ direction }: { direction: "left" | "right" }) {
   );
 }
 
+// function CaseVector() {
+//   return (
+//     <div className="relative flex aspect-square w-[210px] shrink-0 items-center justify-center overflow-hidden rounded-[8px] bg-[#071C49] p-[18px] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]">
+//       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,180,253,0.28),transparent_30%),radial-gradient(circle_at_80%_75%,rgba(0,87,255,0.32),transparent_34%)]" />
+//       <div className="absolute inset-[18px] rounded-[8px] border border-white/10" />
+//       <div className="relative grid h-[132px] w-[132px] grid-cols-5 gap-[9px] rotate-45">
+//         {Array.from({ length: 25 }).map((_, index) => (
+//           <span
+//             className="h-[12px] w-[12px] rounded-[3px] bg-[#00B4FD]/70 shadow-[0_0_18px_rgba(0,180,253,0.32)]"
+//             key={index}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+import Image from "next/image";
+
+
 function CaseVector() {
   return (
-    <div className="relative flex aspect-square w-[210px] shrink-0 items-center justify-center overflow-hidden rounded-[8px] bg-[#071C49] p-[18px] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,180,253,0.28),transparent_30%),radial-gradient(circle_at_80%_75%,rgba(0,87,255,0.32),transparent_34%)]" />
-      <div className="absolute inset-[18px] rounded-[8px] border border-white/10" />
-      <div className="relative grid h-[132px] w-[132px] grid-cols-5 gap-[9px] rotate-45">
-        {Array.from({ length: 25 }).map((_, index) => (
-          <span
-            className="h-[12px] w-[12px] rounded-[3px] bg-[#00B4FD]/70 shadow-[0_0_18px_rgba(0,180,253,0.32)]"
-            key={index}
-          />
-        ))}
-      </div>
+    <div className="relative aspect-square w-[210px] shrink-0 overflow-hidden rounded-[8px] bg-[#071C49] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]">
+      <Image
+        src="/images/caseVector.png"
+        alt="Case Study"
+        fill
+        className="object-cover"
+      />
     </div>
   );
 }
@@ -138,8 +154,18 @@ export default function CaseStudiesSection() {
         </div>
 
         <div className="relative mx-auto min-h-[245px] max-w-[690px]">
-          <div className="pointer-events-none absolute top-[26px] left-[-44px] hidden h-[190px] w-[260px] rounded-[8px] bg-[#021820]/55 opacity-70 sm:block" />
-          <div className="pointer-events-none absolute top-[26px] right-[-44px] hidden h-[190px] w-[260px] rounded-[8px] bg-[#021820]/55 opacity-70 sm:block" />
+          {/* <div className="pointer-events-none absolute top-[26px] left-[-44px] hidden h-[190px] w-[260px] rounded-[8px] bg-[#021820]/55 opacity-70 sm:block" />
+          <div className="pointer-events-none absolute top-[26px] right-[-44px] hidden h-[190px] w-[260px] rounded-[8px] bg-[#021820]/55 opacity-70 sm:block" /> */}
+
+
+<div className="pointer-events-none absolute top-[40px] left-[-44px] hidden h-[210px] w-[260px] overflow-hidden rounded-[8px] opacity-30 sm:block">
+  <Image
+    src="/images/caseVector.png"
+    alt="Background"
+    fill
+    className="object-cover brightness-150 saturate-50"
+  />
+</div>
 
           <div
             className="relative mx-auto flex flex-col items-center gap-9 rounded-[12px] bg-[#021A22] p-5 shadow-2xl shadow-black/25 transition-all duration-500 ease-out md:flex-row"
