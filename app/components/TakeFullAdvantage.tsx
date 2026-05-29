@@ -33,7 +33,7 @@ export default function MarqueeSection() {
           className="flex items-center"
         >
           {textItems}
-          {textItems} {/* Duplicate for seamless loop */}
+          {textItems} 
         </motion.div>
       </div>
     </section>

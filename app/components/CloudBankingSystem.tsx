@@ -67,7 +67,7 @@ export default function CloudBankingSection() {
             </LaptopFrame>
           </div>
 
-          {/* Right Content */}
+         
           <div className="pt-[34px] lg:pr-14">
             <h3 className="mb-[26px] max-w-[455px] text-[18px] font-medium leading-[1.28] text-[#EAF2F8] md:text-[20px]">
               Run a more efficient, flexible,and digitally connected corebanking system
@@ -77,7 +77,6 @@ export default function CloudBankingSection() {
               What you will get:
             </p>
 
-            {/* Checklist Grid */}
             <div className="grid items-start gap-x-6 gap-y-[9px] sm:grid-cols-2">
               {features.map((feature, idx) => (
                 <div

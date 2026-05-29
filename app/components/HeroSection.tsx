@@ -46,59 +46,16 @@ export default function HeroSection() {
 
           </div>
 
-          {/* <div className="group/hero relative mx-auto mt-1 h-[176px] w-full max-w-[288px] min-[360px]:mt-2 min-[360px]:h-[198px] min-[360px]:max-w-[330px] sm:h-[250px] sm:max-w-[395px] md:h-[300px] lg:mx-0 lg:mt-0 lg:scale-[1.08]">
-            <Image
-              src="/images/P1.png"
-              alt="Modern banking"
-              width={365}
-              height={300}
-              priority
-              quality={100}
-              sizes="(max-width: 360px) 178px, (max-width: 640px) 246px, 365px"
-              className="relative ml-[66px] aspect-[246/204] w-[178px] overflow-hidden rounded-[18px] border border-white/10 object-cover shadow-[0_26px_70px_rgba(0,0,0,0.28)] transition duration-500 ease-out group-hover/hero:-translate-y-1 group-hover/hero:scale-[1.015] min-[360px]:ml-[76px] min-[360px]:w-[205px] sm:ml-[79px] sm:w-[246px] lg:w-[365px] lg:rounded-[30px]"
-            />
-
-            <Image
-              src="/images/Home1.png"
-              alt="Account balance card"
-              width={250}
-              height={227}
-              quality={100}
-              sizes="(max-width: 360px) 104px, (max-width: 640px) 139px, 250px"
-              // className="absolute right-[-30px] top-[12px] z-20 w-[104px] opacity-90 drop-shadow-[0_18px_30px_rgba(0,0,0,0.3)] transition duration-500 ease-out group-hover/hero:translate-x-2 group-hover/hero:-translate-y-1 group-hover/hero:opacity-80 min-[360px]:right-[4px] min-[360px]:top-[14px] min-[360px]:w-[118px] sm:right-[1px] sm:top-[15px] sm:w-[139px] lg:right-[-34px] lg:top-[-8px] lg:w-[250px]"
-// className="absolute right-[10px] top-[12px] z-20 w-[104px] opacity-80 blur-[0.3px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.25)] transition duration-500 ease-out group-hover/hero:translate-x-3 group-hover/hero:-translate-y-1 group-hover/hero:opacity-90 min-[360px]:right-[10px] min-[360px]:top-[14px] min-[360px]:w-[118px] sm:right-[8px] sm:top-[15px] sm:w-[139px] lg:right-[-20px] lg:top-[-8px] lg:w-[250px]"
-className="absolute right-0 top-[12px] z-20 w-[104px] opacity-80 blur-[0.3px] drop-shadow-[0_18px_35px_rgba(0,0,0,0.25)] transition duration-500 ease-out
-group-hover/hero:translate-x-3 
-group-hover/hero:-translate-y-1 
-group-hover/hero:opacity-90 
-translate-x-[8px]
-min-[360px]:top-[14px] min-[360px]:w-[118px]
-sm:top-[15px] sm:w-[139px]
-lg:right-[-10px] lg:top-[-8px] lg:w-[250px]"
-
-/>
-            <Image
-              src="/images/Home.png"
-              alt="Recent activity"
-              width={254}
-              height={118}
-              quality={100}
-              sizes="(max-width: 360px) 124px, (max-width: 640px) 166px, 254px"
-              className="absolute left-[8px] top-[72px] z-20 w-[124px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.28)] transition duration-500 ease-out group-hover/hero:-translate-y-3 group-hover/hero:-translate-x-1 group-hover/hero:scale-[1.055] min-[360px]:left-[10px] min-[360px]:top-[82px] min-[360px]:w-[142px] sm:left-0 sm:top-[102px] sm:w-[166px] lg:left-[-62px] lg:top-[142px] lg:w-[254px]"
-            />
-          </div> */}
-
           <motion.div
   initial={{ opacity: 0, scale: 0.95 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
   className="group/hero relative mx-auto mt-1 h-[176px] w-full max-w-[288px] min-[360px]:mt-2 min-[360px]:h-[198px] min-[360px]:max-w-[330px] sm:h-[250px] sm:max-w-[395px] md:h-[300px] lg:mx-0 lg:mt-0 lg:scale-[1.08]"
 >
-  {/* Background Glow */}
+  
   <div className="absolute left-[34%] top-[-30px] h-[230px] w-[230px] rounded-full bg-[#0057FF]/35 blur-[82px]" />
   <div className="absolute left-[60%] top-[-8px] h-[140px] w-[140px] rounded-full bg-[#0EA5E9]/20 blur-[58px]" />
 
-  {/* MAIN IMAGE */}
   <Image
     src="/images/P1.png"
     alt="Modern banking"
@@ -110,7 +67,7 @@ lg:right-[-10px] lg:top-[-8px] lg:w-[250px]"
     className="relative ml-[66px] aspect-[246/204] w-[178px] overflow-hidden rounded-[18px] border border-white/10 object-cover shadow-[0_26px_70px_rgba(0,0,0,0.28)] transition duration-500 ease-out group-hover/hero:-translate-y-1 group-hover/hero:scale-[1.015] min-[360px]:ml-[76px] min-[360px]:w-[205px] sm:ml-[79px] sm:w-[246px] lg:w-[365px] lg:rounded-[30px]"
   />
 
-  {/* TOP RIGHT CARD */}
+  
   <div className="absolute right-0 top-[12px] z-20 w-[104px] translate-x-[8px] opacity-80 blur-[0.3px] drop-shadow-[0_18px_35px_rgba(0,0,0,0.25)] transition duration-500 ease-out group-hover/hero:translate-x-3 group-hover/hero:-translate-y-1 group-hover/hero:opacity-90 min-[360px]:top-[14px] min-[360px]:w-[118px] sm:top-[15px] sm:w-[139px] lg:right-[-10px] lg:top-[-8px] lg:w-[250px]">
     <div className="mb-[9px] flex items-center gap-[6px]">
       <Image
@@ -124,7 +81,6 @@ lg:right-[-10px] lg:top-[-8px] lg:w-[250px]"
     </div>
     </div>
 
-  {/* BOTTOM LEFT CARD */}
   <Image
     src="/images/Home.png"
     alt="Recent activity"
