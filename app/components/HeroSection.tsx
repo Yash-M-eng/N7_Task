@@ -46,15 +46,16 @@ export default function HeroSection() {
 
           </div>
 
-          <motion.div
+          {/* <motion.div
   initial={{ opacity: 0, scale: 0.95 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
   className="group/hero relative mx-auto mt-1 h-[176px] w-full max-w-[288px] min-[360px]:mt-2 min-[360px]:h-[198px] min-[360px]:max-w-[330px] sm:h-[250px] sm:max-w-[395px] md:h-[300px] lg:mx-0 lg:mt-0 lg:scale-[1.08]"
 >
-  
+
   <div className="absolute left-[34%] top-[-30px] h-[230px] w-[230px] rounded-full bg-[#0057FF]/35 blur-[82px]" />
   <div className="absolute left-[60%] top-[-8px] h-[140px] w-[140px] rounded-full bg-[#0EA5E9]/20 blur-[58px]" />
+
 
   <Image
     src="/images/P1.png"
@@ -67,7 +68,6 @@ export default function HeroSection() {
     className="relative ml-[66px] aspect-[246/204] w-[178px] overflow-hidden rounded-[18px] border border-white/10 object-cover shadow-[0_26px_70px_rgba(0,0,0,0.28)] transition duration-500 ease-out group-hover/hero:-translate-y-1 group-hover/hero:scale-[1.015] min-[360px]:ml-[76px] min-[360px]:w-[205px] sm:ml-[79px] sm:w-[246px] lg:w-[365px] lg:rounded-[30px]"
   />
 
-  
   <div className="absolute right-0 top-[12px] z-20 w-[104px] translate-x-[8px] opacity-80 blur-[0.3px] drop-shadow-[0_18px_35px_rgba(0,0,0,0.25)] transition duration-500 ease-out group-hover/hero:translate-x-3 group-hover/hero:-translate-y-1 group-hover/hero:opacity-90 min-[360px]:top-[14px] min-[360px]:w-[118px] sm:top-[15px] sm:w-[139px] lg:right-[-10px] lg:top-[-8px] lg:w-[250px]">
     <div className="mb-[9px] flex items-center gap-[6px]">
       <Image
@@ -89,8 +89,56 @@ export default function HeroSection() {
     quality={100}
     className="absolute left-[8px] top-[72px] z-20 w-[124px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.28)] transition duration-500 ease-out group-hover/hero:-translate-y-3 group-hover/hero:-translate-x-1 group-hover/hero:scale-[1.055] min-[360px]:left-[10px] min-[360px]:top-[82px] min-[360px]:w-[142px] sm:left-0 sm:top-[102px] sm:w-[166px] lg:left-[-62px] lg:top-[142px] lg:w-[254px]"
   />
-</motion.div>
+</motion.div> */}
 
+
+<motion.div
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+  className="group/hero relative mx-auto mt-1 h-[176px] w-full max-w-[288px] min-[360px]:mt-2 min-[360px]:h-[198px] min-[360px]:max-w-[330px] sm:h-[250px] sm:max-w-[395px] md:h-[300px] lg:mx-0 lg:mt-0 lg:scale-[1.08]"
+>
+ 
+  <div className="absolute left-[34%] top-[-30px] h-[230px] w-[230px] rounded-full bg-[#0057FF]/35 blur-[82px]" />
+  <div className="absolute left-[60%] top-[-8px] h-[140px] w-[140px] rounded-full bg-[#0EA5E9]/20 blur-[58px]" />
+
+  
+  <Image
+    src="/images/P1.png"
+    alt="Modern banking"
+    width={365}
+    height={300}
+    priority
+    quality={100}
+    className="relative ml-[66px] w-[178px] rounded-[18px] border border-white/10 object-cover shadow-[0_26px_70px_rgba(0,0,0,0.28)] transition duration-500 ease-out group-hover/hero:-translate-y-1 group-hover/hero:scale-[1.015] min-[360px]:ml-[76px] min-[360px]:w-[205px] sm:ml-[79px] sm:w-[246px] lg:w-[365px] lg:rounded-[30px]"
+  />
+
+
+  <motion.div
+    initial={{ opacity: 0, x: 20 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.6, delay: 0.3 }}
+    className="absolute right-[-150px] top-[10px] z-20 w-[104px] sm:w-[130px] lg:w-[250px] opacity-40 drop-shadow-[0_18px_35px_rgba(0,0,0,0.25)] transition duration-500 ease-out group-hover/hero:translate-x-2 group-hover/hero:-translate-y-1 group-hover/hero:opacity-100"
+  >
+    <Image
+      src="/images/Home1.png"
+      alt="Balance Card"
+      width={250}
+      height={227}
+      className="w-full h-auto opacity-60"
+    />
+  </motion.div>
+
+  
+  <Image
+    src="/images/Home.png"
+    alt="Recent activity"
+    width={254}
+    height={118}
+    className="absolute left-[8px] top-[72px]  opacity-80 z-20 w-[124px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.28)] transition duration-500 ease-out group-hover/hero:-translate-y-3 group-hover/hero:-translate-x-1 group-hover/hero:scale-[1.055] sm:left-0 sm:top-[102px] sm:w-[166px] lg:left-[-62px] lg:top-[142px] lg:w-[254px]"
+  />
+
+</motion.div>
 
         </div>
 
