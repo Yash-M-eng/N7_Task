@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Archivo, Chivo_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const chivoMono = Chivo_Mono({
+  variable: "--font-chivo-mono",
   subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
   title: "N7",
-  description: "Coming soon",
+  description: "The new foundation of modern banking",
 };
 
 export default function RootLayout({
@@ -25,9 +27,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${archivo.variable} ${chivoMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-background text-foreground flex flex-col">
+      <body className="flex min-h-full flex-col bg-[#000D12] text-white">
         {children}
       </body>
     </html>

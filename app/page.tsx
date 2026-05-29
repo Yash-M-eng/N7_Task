@@ -1,9 +1,29 @@
+import CaseStudiesSection from "./components/CaseStudiesSection";
+import CTASection from "./components/CTASection";
+import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
+import SolutionsSection from "./components/SolutionsSection";
+import GetYourSelf from "./components/GetYourSelf"
+import TakeFullAdvantage from "./components/TakeFullAdvantage";
+import CloudBankingSection from "./components/CloudBankingSystem";
+import DigitalBankingSection from "./components/DigitalBankingSection";
+import Footer from "./components/Footer";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-1 items-center justify-center bg-background px-6 text-center">
-      <h1 className="font-sans text-4xl font-semibold tracking-normal text-foreground sm:text-6xl">
-        Coming soon
-      </h1>
+    <main className="relative min-h-screen overflow-hidden bg-[#000D12] text-white">
+      <Navbar />
+      <HeroSection />
+      <SolutionsSection />
+      <CloudBankingSection />
+      <TakeFullAdvantage />
+      <DigitalBankingSection/>
+      <GetYourSelf />
+      <CTASection brand="N7" />
+      <CaseStudiesSection />
+      <Footer/>
+      
+
     </main>
   );
 }
